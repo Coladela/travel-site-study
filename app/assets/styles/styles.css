@@ -1,3 +1,10 @@
-body{
+$mainBlue: #2f5572;
 
+body{
+    columns:  10px;
+    color: $mainBlue;
+}
+
+.box {
+    .a{ padding :10px; }
 }

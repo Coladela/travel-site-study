@@ -1,4 +1,10 @@
 body{
+    -webkit-columns:  10px;
+       -moz-columns:  10px;
+            columns:  10px;
+    color: #2f5572;
+}
 
-
+.box .a{
+    padding :10px;
 }
