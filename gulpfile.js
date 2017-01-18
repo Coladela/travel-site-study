@@ -3,8 +3,7 @@ watch = require("gulp-watch")
 postCss = require("gulp-postcss")
 autoPrefixer = require("autoprefixer")
 cssVars = require("postcss-simple-vars")
-nested = require("postcss-nested")
-;
+nested = require("postcss-nested");
 
 gulp.task('default',function(){
     console.log('default task');
@@ -15,11 +14,14 @@ console.log("html changes");
 });
 
 gulp.task('styles', function(){
+
     gulp.src('./app/assets/styles/styles.css')
         .pipe(postCss([   cssVars , 
                          nested ,
                           autoPrefixer  ]))
         .pipe(gulp.dest('./app/temp/styles'))
+            console.log('styles end');
+
 });
 
 gulp.task('watch', function(){
